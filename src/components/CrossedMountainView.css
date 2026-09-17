@@ -1,0 +1,50 @@
+.crossed-view {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: #f6d9a8;
+  display: flex;
+  flex-direction: column;
+}
+
+.crossed-svg {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.crossed-caption {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #4a3a2a;
+  text-shadow: 0 1px 6px rgba(255, 255, 255, 0.5);
+}
+
+.crossed-eyebrow {
+  font-family: var(--font-mincho);
+  font-size: 19px;
+  margin: 0 0 4px;
+}
+
+.crossed-sub {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  margin: 0;
+  opacity: 0.85;
+}
+
+.crossed-back {
+  position: absolute;
+  left: 50%;
+  bottom: calc(28px + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  padding: 13px 22px;
+  border-radius: 999px;
+  background: rgba(46, 64, 52, 0.85);
+  color: #fff;
+  font-size: 13px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}

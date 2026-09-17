@@ -1,0 +1,78 @@
+.town-view {
+  position: relative;
+  height: calc(100dvh - 150px);
+  min-height: 520px;
+  overflow: hidden;
+}
+
+.town-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.town-house {
+  transition: filter 0.3s ease;
+}
+
+.town-house--glow {
+  filter: drop-shadow(0 0 6px var(--gold)) drop-shadow(0 0 2px var(--gold));
+}
+
+.town-monument {
+  transition: filter 0.3s ease;
+}
+
+.town-monument--glow {
+  filter: drop-shadow(0 0 5px var(--gold));
+}
+
+.town-season-switch {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.town-season {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  box-shadow: 0 2px 6px rgba(46, 64, 52, 0.15);
+  opacity: 0.6;
+}
+
+.town-season--active {
+  opacity: 1;
+  background: #fff;
+}
+
+.town-actions {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 0 14px;
+}
+
+.town-btn {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--ink2);
+  font-size: 12px;
+  box-shadow: 0 3px 10px rgba(46, 64, 52, 0.15);
+}
+
+.town-btn--active {
+  background: var(--ink2);
+  color: #fff;
+}
